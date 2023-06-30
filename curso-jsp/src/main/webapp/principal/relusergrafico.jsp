@@ -54,33 +54,25 @@
 
 															<div class="form-row align-items-center">
 															
-																<div class="col-sm-3 my-1">
+																<div class="col-sm-4 my-1">
 																	<label class="form-label" for="dataInicial">Data Inicial:</label>
 																	<input value="${dataInicial}" type="text" class="form-label" id="dataInicial" autocomplete="off" name="dataInicial">
 																</div>
 																
-																<div class="col-sm-3 my-1">
+																<div class="col-sm-4 my-1">
 																
 																	<label class="form-label" for="dataFinal">Data Final:</label>
 																	<input value="${dataFinal}" type="text" class="form-label" id="dataFinal" autocomplete="off" name="dataFinal">
 																
 																</div>
 
-																<div class="col-auto my-1">
+																<div class="col-sm-4 my-1">
 																	<button type="button" onclick="gerarGrafico();" class="btn btn-primary">GERAR GRÁFICO</button>
 																</div>
 															</div>
 
 														</form>
 														
-														
-														<div>
-
-															<div style="height: 400px">
-																<canvas id="myChart"></canvas>
-															</div>
-
-														</div>
 													</div>
 												</div>
 											</div>
@@ -90,6 +82,15 @@
 								<div id="styleSelector"></div>
 							</div>
 						</div>
+						
+						<div>
+
+															<div style="height: 400px">
+																<canvas id="myChart"></canvas>
+															</div>
+
+														</div>
+						
 					</div>
 				</div>
 			</div>

@@ -33,7 +33,6 @@
                       <!-- Page-header end -->
 							
 							<img alt="Not found"  width="100%" src="<%= request.getContextPath() %>/assets/images/tela.jpg">
-							<img alt="Not found"  width="100%" src="<%= request.getContextPath() %>/assets/images/telafinal.png">
 							
 							
                     </div>
