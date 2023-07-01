@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="UTF-8"%>
 
  <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>   
@@ -133,7 +133,7 @@ function gerarGrafico() {
 				  data: {
 				      labels: json.perfils,
 				      datasets: [{
-				        label: 'Gráfico de média salarial por funcionário',
+				        label: 'Gráfico de renda salarial (média) por funcionário',
 				        backgroundColor: 'rgb(255, 99, 132)',
 				        borderColor: 'rgb(255, 99, 132)',
 				        data: json.salarios,

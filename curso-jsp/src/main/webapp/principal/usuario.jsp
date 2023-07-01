@@ -1,6 +1,7 @@
 <%@page import="model.ModelLogin"%>
-<%@ page language="java" contentType="text/html; charset=UTF-8"
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="UTF-8"%>
+    
  
  <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>   
     
@@ -44,6 +45,10 @@
                                            <div class="row">
                                             <div class="col-sm-12">
                                                 <!-- Basic Form Inputs card start -->
+                                                <span style="font-size: 16px; background-color: #3CB371; color: #fff" id="msg">${msg}</span>
+                                                <span style="font-size: 16px; background-color: #B22222; color: #fff" id="msg">${msgalerta}</span>
+                                                <br><br>
+                                                
                                                 <div class="card">
                                                     <div class="card-block">
                                                         <h4 class="sub-title">Cadastro de Usuário</h4>
@@ -240,8 +245,7 @@
                                                 </div>
                                                 </div>
                                                 </div>
-                                                <span style="font-size: 16px; background-color: #3CB371; color: #fff" id="msg">${msg}</span>
-                                                <span style="font-size: 16px; background-color: #B22222; color: #fff" id="msg">${msgalerta}</span>
+                                               
 
 										<div style="height: 300px; overflow: scroll;">
 											<table class="table" id="tabelaresultadosview">

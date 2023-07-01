@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="UTF-8"%>
 
  <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>   
@@ -69,7 +69,6 @@
 																<div class="col-auto my-1">
 																	<button type="button" onclick="imprimirHtml();" class="btn btn-primary">BUSCAR TELEFONES</button>
 																	<button type="button" onclick="imprimirPdf();" class="btn btn-dark">IMPRIMIR EM PDF</button>
-																	<button type="button" onclick="imprimirExcel();" class="btn btn-success">IMPRIMIR POR EXCEL</button>
 																</div>
 															</div>
 
@@ -135,13 +134,6 @@ function imprimirPdf() {
     $("#formUser").submit();
     return false;
 }
-
-function imprimirExcel() {
-    document.getElementById("acaoRelatorioImprimirTipo").value = 'imprimirRelatorioExcel';
-    $("#formUser").submit();
-    return false;
-}
-
 
 
 $( function() {

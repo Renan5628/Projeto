@@ -128,7 +128,6 @@ public class ServletUsuarioController extends ServletGenericUtil {
 					 
 					 List<ModelLogin> modelLogins = daoUsuarioRepository.consultaUsuarioList(super.getUserLogado(request));
 					 
-					 request.setAttribute("msg", "Lista de cadastros carregada!");
 				     request.setAttribute("modelLogins", modelLogins);
 				     request.setAttribute("totalPagina", daoUsuarioRepository.totalPagina(this.getUserLogado(request)));
 					 request.getRequestDispatcher("principal/usuario.jsp").forward(request, response);
@@ -181,8 +180,7 @@ public class ServletUsuarioController extends ServletGenericUtil {
 					 
 				 }
 				 
-				 else if (acao != null && !acao.isEmpty() && acao.equalsIgnoreCase("imprimirRelatorioPDF")
-						                    || acao.equalsIgnoreCase("imprimirRelatorioExcel")) {
+				 else if (acao != null && !acao.isEmpty() && acao.equalsIgnoreCase("imprimirRelatorioPDF")) {
 					 
 					 String dataInicial = request.getParameter("dataInicial");
 					 String dataFinal = request.getParameter("dataFinal");
@@ -210,9 +208,6 @@ public class ServletUsuarioController extends ServletGenericUtil {
 						 relatorio = new ReportUtil().geraReltorioPDF(modelLogins, "resl-user-jsp", params ,request.getServletContext());
 						 extensao = "pdf";
 						 
-					 }else if(acao.equalsIgnoreCase("imprimirRelatorioExcel")) {
-						 relatorio = new ReportUtil().geraReltorioExcel(modelLogins, "resl-user-jsp", params ,request.getServletContext());
-						 extensao = "xls";
 					 }
 					 
 					 
