@@ -5,7 +5,7 @@
     <nav class="navbar header-navbar pcoded-header">
               <div class="navbar-wrapper">
                   <div class="navbar-logo">
-                      <img src="assets/images/jsp.png" width="80px" >
+                      <img src="assets/images/jsp-novo.png" width="80px" height="30px" >
                       <a class="mobile-menu waves-effect waves-light" id="mobile-collapse" href="#!">
                           <i class="ti-menu"></i>
                       </a>
