@@ -242,7 +242,6 @@ public class DAOUsuarioRepository {
 			retorno.add(modelLogin);
 		}
 		
-		
 		return retorno;
 	}
 	
